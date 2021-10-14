@@ -1,0 +1,136 @@
+// Import all. (also works with nameSpace)
+@use '../util' as *;
+
+
+.calculator {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.2rem;
+  font-weight: 700;
+  background-color: var(--main-background);
+
+  // CONTAINER:
+  &__container {
+    width: 37.50%;
+    display: flex;
+    flex-direction: column;
+    //gap: 3.2rem;
+  }
+
+  // HEADER:
+  &__header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-end; // Mozda promenim.
+    color: var(--text-nav-color);
+    margin-bottom: 3.2rem;
+  }
+
+  &__heading {
+    line-height: 3.6rem;
+  }
+
+  
+
+ 
+
+ 
+  &__display {
+    width: 100%;
+    margin-bottom: 2.4rem;
+    min-height: 12.8rem;
+    background-color: var(--screen-background);
+    color: var(--text-color-white);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1rem 3.2rem 2.5rem;
+    gap: .5rem;
+
+    &-prev-operand {
+      font-size: 1.8rem;
+    }
+  //- Font sizes (px)
+  // 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+    &-curr-operand {
+      font-size: 4.8rem;
+      line-height: 5.4rem;
+    }
+
+  }
+
+  // BUTTONS:
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2.5rem;
+    row-gap: 2.4rem;
+    background-color: var(--toggle-keypad-background);
+    padding: 3.2rem 3rem;
+    border-radius: 1rem;
+    // align-items: center;
+    // justify-items: center;
+
+    & .btn {
+      padding: 1rem 1.3rem 1.4rem 1.4rem;
+      border: none;
+      border-radius: 1rem;
+      cursor: pointer;
+      font-size: inherit;
+      font-family: inherit;
+      line-height: 3.6rem;
+      background-color: var(--key-num-background);
+      color: var(--text-color-dark);
+      box-shadow: inset 0px -4px 0px var(--key-num-shadow);
+    }
+
+    & &--erase  {
+      background-color: var(--key-erase-background);
+      color: var(--text-color-white);
+      box-shadow: inset 0px -4px 0px var(--key-erase-shadow);
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    & &--equal {
+      background-color: var(--key-equal);
+      box-shadow: inset 0px -4px 0px var(--key-equal-shadow);
+      color: var(--text-color-white);
+    }
+  }
+
+  &__span-1 {
+    grid-column: 1 / span 2;
+  }
+
+  &__span-2 {
+    grid-column: 3 / span 2;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+@use '../util' as *;
+
+.calculator {
+
+   // THEME:
+  &__theme {
+    display: flex;
+    align-items: center;
+    gap: 2.1rem;
+
+    &-small {
+      font-size: 1.2rem;
+      line-height: 1.3rem;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      align-self: flex-end;
+      margin-bottom: .5rem;
+    }
+  }
+
+  &__switch-container {
+    border: none;
+
+    & .labels {
+      font-size: 1.2rem;
+      display: flex;
+      gap: 1.7rem;
+      padding: .5rem .6rem;
+    }
+  }
+} 
+
+.theme-toggle {
+  width: 7.1rem;
+  display: flex;
+  background-color: var(--toggle-keypad-background);
+  border-radius: 1.3rem;
+  padding: .3rem;
+}
+
+.custom-radio-button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: .3rem;
+  }
+}
+
+.checkmark {
+  background-color: var(--key-equal);
+  position: absolute;
+  top: .2rem;
+  left: .2rem;
+}
+
+.custom-radio-button input {
+  display: none;
+}
+
+.custom-radio-button .checkmark {
+  width: calc(100% - .4rem);
+  height: calc(100% - .4rem);
+  background-color: var(--key-equal);
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.custom-radio-button input:checked + .checkmark {
+  opacity: 1;
+}
+ 

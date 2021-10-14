@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+  <!-- FONTS -->
+  <!-- CSS/JS -->
+  <link rel="stylesheet" href="/dist/style.css">
+  <script defer src="/dist/script.js"></script>
+
+  <title>Calculator App</title>
+</head>
+<body>
+<section class="calculator">
+  <main class="calculator__container">
+    <header class="calculator__header">
+      <h4 class="calculator__heading">calc</h4>
+      <div class="calculator__theme">
+        <small class="calculator__theme-small">theme</small>
+        <fieldset class="calculator__switch-container" aria-label="theme toggle">
+          <div class="labels">
+            <span>1</span><span>2</span><span>3</span>
+          </div>
+          <div class="theme-toggle">
+            <label class="custom-radio-button">
+              <input class="default-mode" name="toggle-state" type="radio" checked/>
+              <span class="checkmark"></span>
+            </label>
+            <label class="custom-radio-button">
+              <input class="light-mode" name="toggle-state" type="radio"/>
+              <span class="checkmark"></span>
+            </label>
+            <label class="custom-radio-button">
+              <input class="purple-mode" name="toggle-state" type="radio"/>
+              <span class="checkmark"></span>
+            </label>
+          </div>   
+      </fieldset>
+        <!-- <button class="calculator__theme-btn"></button> Da vidim kako? -->
+      </div>
+    </header>
+    <div class="calculator__display">
+      <div class="calculator__display-prev-operand">5500</div>
+      <div class="calculator__display-curr-operand">399,981</div>
+    </div>
+    <div class="calculator__buttons">
+      <button class="btn">7</button>
+      <button class="btn">8</button>
+      <button class="btn">9</button>
+      <button class="btn calculator__buttons--erase">del</button>
+      <button class="btn">4</button>
+      <button class="btn">5</button>
+      <button class="btn">6</button>
+      <button class="btn">+</button>
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>
+      <button class="btn">-</button>
+      <button class="btn">.</button>
+      <button class="btn">0</button>
+      <button class="btn">/</button>
+      <button class="btn">x</button>
+      <button class="btn calculator__span-1 calculator__buttons--erase">Reset</button>
+      <button class="btn calculator__span-2 calculator__buttons--equal">=</button>
+    </div>
+  </main>
+</section>
+</body>
+</html>
