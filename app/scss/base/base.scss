@@ -13,6 +13,11 @@
 html {
   // 1 rem = 10px > 10:16 = 0.625‬ > 62.5% 
   font-size: 62.5%;
+
+  // PHONE:
+  @include respond('phone') {
+    font-size: 60%;
+  }
 }
 
 body {

@@ -39,32 +39,31 @@
             </label>
           </div>   
       </fieldset>
-        <!-- <button class="calculator__theme-btn"></button> Da vidim kako? -->
       </div>
     </header>
     <div class="calculator__display">
-      <div class="calculator__display-prev-operand">5500</div>
-      <div class="calculator__display-curr-operand">399,981</div>
+      <div class="calculator__display-prev-operand" data-prev-operand></div>
+      <div class="calculator__display-curr-operand" data-curr-operand></div>
     </div>
     <div class="calculator__buttons">
-      <button class="btn">7</button>
-      <button class="btn">8</button>
-      <button class="btn">9</button>
-      <button class="btn calculator__buttons--erase">del</button>
-      <button class="btn">4</button>
-      <button class="btn">5</button>
-      <button class="btn">6</button>
-      <button class="btn">+</button>
-      <button class="btn">1</button>
-      <button class="btn">2</button>
-      <button class="btn">3</button>
-      <button class="btn">-</button>
-      <button class="btn">.</button>
-      <button class="btn">0</button>
-      <button class="btn">/</button>
-      <button class="btn">x</button>
-      <button class="btn calculator__span-1 calculator__buttons--erase">Reset</button>
-      <button class="btn calculator__span-2 calculator__buttons--equal">=</button>
+      <button class="btn" data-number>7</button>
+      <button class="btn" data-number>8</button>
+      <button class="btn" data-number>9</button>
+      <button class="btn calculator__buttons--erase" data-delete>del</button>
+      <button class="btn" data-number>4</button>
+      <button class="btn" data-number>5</button>
+      <button class="btn" data-number>6</button>
+      <button class="btn" data-operation>+</button>
+      <button class="btn" data-number>1</button>
+      <button class="btn" data-number>2</button>
+      <button class="btn" data-number>3</button>
+      <button class="btn" data-operation>-</button>
+      <button class="btn" data-number>.</button>
+      <button class="btn" data-number>0</button>
+      <button class="btn" data-operation>/</button>
+      <button class="btn" data-operation>x</button>
+      <button class="btn calculator__span-1 calculator__buttons--erase" data-reset>Reset</button>
+      <button class="btn calculator__span-2 calculator__buttons--equal" data-equal>=</button>
     </div>
   </main>
 </section>
